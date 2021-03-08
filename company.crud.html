@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+    <title>company</title>
+</head>
+<body onload="affichage()">
+    <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">company name</th> 
+            <th scope="col">address</th> 
+            <th scope="col">Update</th>
+            <th scope="col">Delete</th>
+            <td><button  class="btn btn-success" type="button">Update</button></td>
+            <td><button  class="btn btn-danger" type="button">Delet</button></td>
+            
+          </tr>
+        </thead>
+        <tbody id="body1">
+          <tr>
+            <th scope="row">1</th>
+            <td>abc</td>
+            <td>def</td>
+            <td>Update</td>
+            <!-- <td><button  class="btn btn-success" type="button">Update</button></td>
+            <td><button  class="btn btn-danger" type="button">Delet</button></td> -->
+
+     
+          </tr>
+          
+          </tbody>
+          </table>
+ <div class="container">
+        <div class=col-6 style="width: 500px;height: 500;margin:200px auto;">  
+            <div class="input-group">
+                <span class="input-group-text">Company name</span>
+                <input id="input1" type="text" aria-label="First name" class="form-control">
+                </div>
+                <div class="input-group">
+                    <span class="input-group-text"> address</span>
+                    <input id="input2" type="text" aria-label="adress" class="form-control">
+                    </div>
+                
+               
+                <div class="input-group">
+                <span class="input-group-text"> email adress</span>
+                <input id="input3" type="email" aria-label="First name" class="form-control">
+                </div>
+                <!-- <div class="input-group">
+                    <span class="input-group-text"> employee</span>
+                    <input id="input4" type="text" aria-label="adress" class="form-control">
+                    </div> -->
+                <div class="d-grid gap-2 col-6 mx-auto">
+                    <button onclick="registerempl()" class="btn btn-primary" type="button">submit</button>
+                  
+                  </div>
+        
+        </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <script src="crud.company.js"></script>
+</body>
+</html>
